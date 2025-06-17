@@ -6,23 +6,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".MainActivity2">
+    tools:context=".LoginScreen">
 
     <ImageView
         android:id="@+id/spotifyIcon"
         android:layout_width="113dp"
         android:layout_height="108dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="120dp"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/spotify"
         android:contentDescription="SpotifyIcon"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.194" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="105dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/millions_of_songs_nfree_on_spotify"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spotifyIcon" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/googleLog"
@@ -31,6 +47,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/inter_medium"
         android:text="@string/continue_with_google"
+        android:gravity="center"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:backgroundTint="@color/black"
@@ -49,21 +66,6 @@
         app:strokeColor="@color/white"
         app:strokeWidth="0.9dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="105dp"
-        android:fontFamily="@font/inter_medium"
-        android:text="@string/millions_of_songs_nfree_on_spotify"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spotifyIcon" />
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/facebookLog"
         android:layout_width="320dp"
@@ -71,13 +73,14 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/inter_medium"
         android:text="@string/continue_with_facebook"
+        android:gravity="center"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:backgroundTint="@color/black"
         app:cornerRadius="40dp"
         app:icon="@drawable/communication"
         app:iconGravity="start"
-        app:iconPadding="30dp"
+        app:iconPadding="12dp"
         app:iconTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,6 +99,7 @@
         android:layout_marginTop="2dp"
         android:fontFamily="@font/inter_medium"
         android:text="@string/continue_with_apple"
+        android:gravity="center"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:backgroundTint="@color/black"
@@ -131,6 +135,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.065" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
