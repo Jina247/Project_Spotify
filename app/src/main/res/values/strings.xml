@@ -16,6 +16,14 @@
     <string name="password_hint">Enter your password</string>
     <string name="sign_up_button_text">Sign Up</string>
     <string name="log_in">Log in</string>
-
-    <!-- <string name="app_name">YourAppName</string> -->
+    <string name="example_email">example123@gmail.com</string>
+    <string name="sign_up_value">Email or phone number</string>
+    <string name="sign_in_label">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="spotifyicon">SpotifyIcon</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sign_up_link_underlined"><![CDATA[<U>Sign up</U>]]></string>
+    <string name="sign_in_link_underlined"><![CDATA[<U>Sign in</U>]]></string>
 </resources>
